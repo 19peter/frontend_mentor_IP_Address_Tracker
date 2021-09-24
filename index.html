@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin="">
+  </script>
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+ 
+</head>
+<body>
+
+  <div class="header">
+    <h1>IP Address Tracker</h1>
+    <div class="input-box">
+      <input class="input" type="text" placeholder="Search for any IP address or domain">
+      <button class="btn"> <img src="images/icon-arrow.svg" alt="arrow"></button>
+    </div>
+  </div>
+  <div class="details">
+    <div class="address">
+      <p class="label">IP ADDRESS</p>
+      <h2 class="address-detail"></h2>
+    </div>
+    <div class="location">
+      <p class="label">LOCATION</p>
+      <h2 class="location-detail"></h2>
+    </div>
+    <div class="timezone">
+      <p class="label">TIMEZONE</p>
+      <h2 class="timezone-detail"></h2>
+    </div>
+    <div class="isp">
+      <p class="label">ISP</p>
+      <h2 class="isp-detail"></h2>
+    </div>
+  </div>
+
+   <div id="mapid"></div>
+  
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="app.js"></script>
+</body>
+</html>

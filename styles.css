@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    background-image: url(images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    width: 35%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+   height: 50px;
+   width: 90%;
+   border: none;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   text-indent: 15px
+}
+
+.btn {
+    width: 10%;
+    height: 50px;
+    position: relative;
+    /* top: 0px; */
+    right: 1px;
+    background-color: black;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    cursor: pointer;
+}
+
+#mapid { 
+    height: 680px; 
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+    right: 15%;
+    top: 27%;
+    border-radius: 15px;
+}
+
+.details div {
+    width: 20%;
+    height: 50px;
+    /* background-color: green; */
+    margin-left: 35px;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+}
+
+.details > div:nth-child(n+2) {
+    border-left: solid 1px lightgrey;
+}
+
+.details div p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: grey;
+    margin-left: 10px;
+}
+
+.details h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+} 
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .input-box {
+        width: 80%;
+    }
+    .input {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 10%
+    }
+
+    .details {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .details div {
+        width: 100%;
+    }
+
+    .details > div:nth-child(n+2) {
+        border-left: none
+    }
+}
