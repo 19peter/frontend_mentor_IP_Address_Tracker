@@ -62,7 +62,7 @@ h1 {
     flex-direction: row;
     width: 70%;
     height: 100px;
-    background-color: white;
+    background-color: red;
     position: absolute;
     z-index: 1000;
     right: 15%;
